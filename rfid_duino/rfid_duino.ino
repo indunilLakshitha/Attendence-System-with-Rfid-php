@@ -78,7 +78,7 @@ void loop() {
     //Post Data
     postData = "UIDresult=" + UIDresultSend;
   
-    http.begin("http://cinecproject.000webhostapp.com/getUID.php");  //Specify request destination
+    http.begin("localhost/Attendence-System-with-Rfid-php/getUID.php");  //Specify request destination
     http.addHeader("Content-Type", "application/x-www-form-urlencoded"); //Specify content-type header
    
     int httpCode = http.POST(postData);   //Send the request
